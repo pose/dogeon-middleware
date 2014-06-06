@@ -5,7 +5,7 @@ module.exports = function () {
     var value;
 
     try {
-      value = DSON.parse(req.body);
+      value = DSON.parse(req.body.toString('utf8'));
     } catch (e) {
       return next(e);
     }

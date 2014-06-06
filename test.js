@@ -4,6 +4,8 @@ var assert = require('assert');
 
 var req = {body: 'such wow'};
 
+req.body = new Buffer(req.body);
+
 function assertCallback(expected) {
   return function (err) {
     assert.deepEqual(expected, req.body);
@@ -14,12 +16,12 @@ dsonMiddleware()(req, {}, assertCallback({}));
 
 var obj = {foo: 'bar'};
 
-req.body = DSON.stringify(obj);
+req.body = new Buffer(DSON.stringify(obj));
 
 dsonMiddleware()(req, {}, assertCallback(obj));
 
 var invalid = 'wow wow wow wow wow';
-req.body = invalid;
+req.body = new Buffer(invalid);
 
 dsonMiddleware()(req, {}, assertCallback(invalid));
 
