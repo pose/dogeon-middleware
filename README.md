@@ -16,11 +16,15 @@ var dogesonParser = require('dson-middleware');
 var express = require('express');
 var app = express();
 
-app.use(dogesonParser);
+app.use(dogesonParser());
 
 app.get('/', function (req, res) {
-  res.send('so dson such doge');
+  res.end(200, 'so dson such doge');
 });
+
+
+app.listen(3000);
+
 ```
 
 
