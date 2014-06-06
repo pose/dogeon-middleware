@@ -20,8 +20,8 @@ req.body = new Buffer(DSON.stringify(obj));
 
 dsonMiddleware()(req, {}, assertCallback(obj));
 
-var invalid = 'wow wow wow wow wow';
-req.body = new Buffer(invalid);
+var invalid = new Buffer('wow wow wow wow wow');
+req.body = invalid;
 
 dsonMiddleware()(req, {}, assertCallback(invalid));
 
