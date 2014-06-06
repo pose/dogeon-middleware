@@ -7,8 +7,7 @@ module.exports = function () {
     try {
       value = DSON.parse(req.body);
     } catch (e) {
-      next(e);
-      return;
+      return next(e);
     }
 
     req.body = value;

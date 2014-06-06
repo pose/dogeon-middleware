@@ -1,6 +1,6 @@
-## dogeson express middleware 
-
 (Work in progress!)
+
+## dogeon express middleware
 
 Install by doing:
 
