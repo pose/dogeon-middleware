@@ -1,0 +1,30 @@
+{
+  "name": "dson-middleware",
+  "version": "0.0.1",
+  "description": "Node.js DSON body parsing middleware (express-compatible). wow wow wow",
+  "dependencies": {
+    "dogeon": "^1.0.0"
+  },
+  "keywords": [
+    "dogeon",
+    "doge",
+    "json",
+    "read",
+    "wow",
+    "wow",
+    "wow"
+  ],
+  "author": {
+    "name": "Kevin Decker",
+    "email": "kpdecker@gmail.com",
+    "url": "http://incaseofstairs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pose/dogeon-middleware"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
