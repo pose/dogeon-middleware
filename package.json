@@ -1,6 +1,6 @@
 {
   "name": "dson-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js DSON body parsing middleware (express-compatible). wow wow wow",
   "dependencies": {
     "dogeon": "^1.0.0"
